@@ -1,0 +1,20 @@
+[
+  {
+    "fieldName": "username",
+    "fieldLabel": "Username",
+    "inputType": "default",
+    "inputPlaceholder": "Your unique username"
+  },
+  {
+    "fieldName": "email",
+    "fieldLabel": "Email",
+    "inputType": "email-address",
+    "inputPlaceholder": "Please enter email"
+  },
+  {
+    "fieldName": "password",
+    "fieldLabel": "Password",
+    "inputType": "password",
+    "inputPlaceholder": "Enter your password"
+  }
+]
