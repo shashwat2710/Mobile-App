@@ -14,3 +14,10 @@ export type FormValidInputProps = {
     formValues: FormInputProps;
     formErrors: FormInputProps;
 }
+
+export type ApiInputProps = {
+    email:string, 
+    password: string,
+    username:string
+    otp?:string,
+}
