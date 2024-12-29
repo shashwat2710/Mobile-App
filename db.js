@@ -1,15 +1,14 @@
 const { Pool } = require('pg');
-
+const { db_host, db_user, db_database_name, db_pass, db_port } = require('./constant');
+console.log(db_host, db_user, db_database_name, db_pass, db_port);
 // Configuration for PostgreSQL Database
 const pool = new Pool({
-  user: 'postgres',            // Replace with your DB username
-  host: 'database-1.c3qoeqys8y1o.us-east-1.rds.amazonaws.com', // AWS RDS endpoint
-  database: 'user-management',     // Replace with your DB name
-  password: 'Hiramani818',       // Replace with your DB password
-  port: 5432,   
-  ssl: {
-    rejectUnauthorized: false // Change this if using a valid certificate
-  }                   // Default PostgreSQL port
+  user: db_user,            // Replace with your DB username
+  host: db_host, // AWS RDS endpoint
+  database: db_database_name,     // Replace with your DB name
+  password: db_pass,       // Replace with your DB password
+  port: db_port,   
+  ssl: false               // Default PostgreSQL port
 });
 
 // Test Connection
